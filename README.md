@@ -1,5 +1,29 @@
 # Leptos Starter Template
 
+## QUICKSTART GUIDE
+
+If you just want to quickly get a leptos tailwind app up and running, these steps worked for me:
+
+Clone this repo and cd into it
+
+- `git clone https://github.com/AlexXi19/leptos-tailwind-template && cd leptos-tailwind-template`
+
+Install and use rust nightly
+
+- `cargo install --locked cargo-leptos` -`rustup toolchain install nightly --allow-downgrade`
+- `rustup default nightly`
+
+Add wasm rust toolchain
+
+- `rustup target add wasm32-unknown-unknown`
+
+Start your app (execute both commands) and visit localhost:3000
+
+- `cargo leptos watch`
+- `npx tailwindcss -i ./input.css -o ./style/output.css --watch`
+
+## Detailed Guide
+
 This is a template demonstrating how to integrate [TailwindCSS](https://tailwindcss.com/) with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool.
 
 If you don't have `cargo-leptos` installed you can install it with
